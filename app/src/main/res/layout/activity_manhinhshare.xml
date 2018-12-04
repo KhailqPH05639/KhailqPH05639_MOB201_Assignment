@@ -7,19 +7,61 @@
     android:orientation="vertical"
     tools:context=".activity.Manhinhshare">
 
+
+    <!--<EditText-->
+        <!--android:id="@+id/edtieude"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:hint="Tiêu đề"-->
+        <!--/>-->
+
+    <!--<EditText-->
+        <!--android:id="@+id/edmota"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:hint="Thêm mô tả"-->
+        <!--/>-->
+
+    <EditText
+        android:layout_marginTop="50dp"
+        android:id="@+id/edurl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Đường Link"
+        android:text="https://www.youtube.com/watch?v=x7GCQi-RVA8" />
+
+    <Button
+        android:id="@+id/btnShareLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="#d9ec0c"
+        android:text="Share Link"
+        android:textAllCaps="false" />
+
+    <TextView
+        android:background="#18e4e4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+      />
+
     <ImageView
         android:id="@+id/imgshare"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:src="@mipmap/ic_launcher"
         android:layout_gravity="center"
-        android:layout_marginTop="50dp"/>
+        android:layout_marginTop="50dp"
+        android:src="@mipmap/ic_launcher" />
+
     <Button
         android:id="@+id/btnshare"
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:text="Share image"
-        android:textAllCaps="false"
         android:layout_gravity="center"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="10dp"
+        android:background="#29ed14"
+        android:text="Share image"
+        android:textAllCaps="false" />
 </LinearLayout>
