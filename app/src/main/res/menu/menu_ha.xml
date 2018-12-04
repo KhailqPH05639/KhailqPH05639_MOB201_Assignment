@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/Course"
+        android:icon="@drawable/home"
+        android:title="Course"/>
+    <item
+        android:id="@+id/DangKy"
+        android:icon="@drawable/dangky"
+        android:title="DangKy"/>
+    <item
+        android:id="@+id/LichHoc"
+        android:icon="@drawable/lichhoc"
+        android:title="LichHoc"/>
+    <item
+        android:id="@+id/LichThi"
+        android:icon="@drawable/lichthi"
+        android:title="LichThi"/>
+
+
+</menu>
