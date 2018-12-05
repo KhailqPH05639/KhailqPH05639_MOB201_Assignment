@@ -39,7 +39,7 @@ public class AdapterUser extends RecyclerView.Adapter<UserHolder> {
      final User user = users.get( position );
       holder.tvId.setText( "Môn :"+user.id );
       holder.tvTen.setText("Name :"+ user.name );
-      holder.tvSdt.setText( "Phone :"+user.phone );
+      holder.tvSdt.setText( "Email :"+user.phone );
       holder.imgxoa.setOnClickListener( new View.OnClickListener() {
           @Override
           public void onClick(View v) {

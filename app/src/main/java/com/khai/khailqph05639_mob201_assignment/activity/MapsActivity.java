@@ -123,7 +123,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         Geocoder geocoder = new Geocoder(getApplicationContext());
         try {
             List<Address> addressList = geocoder.getFromLocation(latitudeText, longitudeText, 1);
-            String str = addressList.get(0).getLocality() + ", ";
+            String str = addressList.get(0).getLocality() + " in ";
             str += addressList.get(0).getCountryName();
             mMap.addMarker(new MarkerOptions().position(latLng).title(str));
             mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng, 10.2f));

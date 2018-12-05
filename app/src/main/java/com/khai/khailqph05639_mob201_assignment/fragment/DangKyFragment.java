@@ -72,14 +72,14 @@ public class DangKyFragment extends Fragment {
                         edname.setError( "Không Được Bỏ Trống" );
                         edMonHoc.setError( "Không Được Bỏ Trống" );
                         return;
-                    } else if (sdt.length() != 10) {
-                        edSdt.setError( "Số Điện Thoại Yêu Cầu 10 số" );
+                    } else if (sdt.equals( "" )) {
+                        edSdt.setError( "Không Được Bỏ Trống" );
                         return;
                     } else if ( result >0 ){
                         adapterUser.notifyDataSetChanged();
                         typeUsers.add( 0, new User( monhoc, name, sdt ) );
                     }else {
-                        Toast.makeText( getActivity(), "Không Có Khối", Toast.LENGTH_SHORT ).show();
+                        Toast.makeText( getActivity(), "Không Có ", Toast.LENGTH_SHORT ).show();
                     }
                 }
                 else {
