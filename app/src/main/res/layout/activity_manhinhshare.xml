@@ -8,19 +8,19 @@
     tools:context=".activity.Manhinhshare">
 
 
-    <!--<EditText-->
-        <!--android:id="@+id/edtieude"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:hint="Tiêu đề"-->
-        <!--/>-->
+    <EditText
+        android:id="@+id/edtieude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tiêu đề"
+        />
 
-    <!--<EditText-->
-        <!--android:id="@+id/edmota"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:hint="Thêm mô tả"-->
-        <!--/>-->
+    <EditText
+        android:id="@+id/edmota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Thêm mô tả"
+        />
 
     <EditText
         android:layout_marginTop="50dp"

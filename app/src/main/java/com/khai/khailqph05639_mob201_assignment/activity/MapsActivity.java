@@ -55,16 +55,14 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-
-
         setContentView(R.layout.activity_maps);
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
 
         googleApiClient = new GoogleApiClient.Builder(this)
-                .addConnectionCallbacks((GoogleApiClient.ConnectionCallbacks) this)
-                .addOnConnectionFailedListener((GoogleApiClient.OnConnectionFailedListener) this)
+                .addConnectionCallbacks(this)
+                .addOnConnectionFailedListener(this)
                 .addApi(LocationServices.API)
                 .build();
 
@@ -163,7 +161,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                                 // Logic to handle location object
                                 latitudeText = location.getLatitude();
                                 longitudeText = location.getLongitude();
-                                Toast.makeText(MapsActivity.this, latitudeText + "   " + longitudeText, Toast.LENGTH_SHORT).show();
+                                Toast.makeText(MapsActivity.this, latitudeText + " " + longitudeText, Toast.LENGTH_SHORT).show();
                             }
                         }
                     });

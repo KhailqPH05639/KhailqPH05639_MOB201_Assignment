@@ -39,8 +39,8 @@ public class Manhinhshare extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate( savedInstanceState );
         setContentView( R.layout.activity_manhinhshare );
-//        edtieude = (EditText) findViewById( R.id.edtieude );
-//        edmota = (EditText) findViewById( R.id.edmota );
+        edtieude = (EditText) findViewById( R.id.edtieude );
+        edmota = (EditText) findViewById( R.id.edmota );
         edurl = (EditText) findViewById( R.id.edurl );
         btnShareLink = (Button) findViewById( R.id.btnShareLink );
         shareDialog = new ShareDialog( Manhinhshare.this );
@@ -53,8 +53,8 @@ public class Manhinhshare extends AppCompatActivity {
                 if (ShareDialog.canShow( ShareLinkContent.class )){
 
                     shareLinkContent = new ShareLinkContent.Builder()
-//                            .setContentTitle( edtieude.getText().toString() )
-//                            .setContentDescription( edmota.getText().toString() )
+                            .setContentTitle( edtieude.getText().toString() )
+                            .setContentDescription( edmota.getText().toString() )
                             .setContentUrl( Uri.parse( edurl.getText().toString() ) ).build();
                 }
                 shareDialog.show( shareLinkContent );
